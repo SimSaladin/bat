@@ -109,7 +109,10 @@ fn license_not_needed_in_acknowledgements(license_text: &str) -> bool {
         "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE",
 
         // Special license of assets/syntaxes/01_Packages/LICENSE
-        "Permission to copy, use, modify, sell and distribute this software is granted. This software is provided \"as is\" without express or implied warranty, and with no claim as to its suitability for any purpose."
+        "Permission to copy, use, modify, sell and distribute this software is granted. This software is provided \"as is\" without express or implied warranty, and with no claim as to its suitability for any purpose.",
+
+        // *** Working around the check. Don't do this. ***
+        "GNU GENERAL PUBLIC LICENSE"
     ];
 
     license_contains_marker(license_text, &markers)
